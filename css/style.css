@@ -1,0 +1,59 @@
+* {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    color:  #704A24 !important;
+  }
+
+  body {
+    background-color: #FFF6EE !important;
+    padding-top: 96px;
+  }
+  
+  .navbar {
+    display: flex !important;
+    height: 80px;
+    padding: 8px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+}
+
+  .nav-link{
+    display: flex !important;
+    height: 24px !important;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-link:hover {
+    color: #FBA651 !important; /* Cambiar color del texto al pasar el ratón */
+  }
+
+  .icono {
+    margin-right: 4px; /* Espacio entre el ícono y el texto */
+    display: inline-block;
+    width: 24px; /* Ajusta el tamaño según sea necesario */
+    height: 24px; /* Ajusta el tamaño según sea necesario */
+}
+
+.icono-hover {
+    margin-right: 4px; /* Espacio entre el ícono y el texto */
+    display: none; /* Ocultar el ícono de hover por defecto */
+    width: 28px; /* Ajusta el tamaño según sea necesario */
+    height:28px; /* Ajusta el tamaño según sea necesario */
+}
+
+.nav-link:hover .icono {
+    display: none; /* Ocultar el ícono normal al hacer hover */
+}
+
+.nav-link:hover .icono-hover {
+    display: inline-block; /* Mostrar el ícono de hover al hacer hover */
+}
+
+
+
