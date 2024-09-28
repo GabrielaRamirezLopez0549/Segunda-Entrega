@@ -86,6 +86,7 @@
     /* 150% */
 }
 
-.titulo, .parrafo{
+.titulo,
+.parrafo {
     padding-bottom: 24px;
 }
