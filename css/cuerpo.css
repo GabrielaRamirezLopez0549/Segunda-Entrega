@@ -1,51 +1,91 @@
-.contenedor{
+.contenedor1 {
     display: flex;
-    justify-content:center;
-    align-items: center; /* Centra verticalmente el texto e imagen */
+    justify-content: center;
+    align-items: center;
+    /* Centra verticalmente el texto e imagen */
     padding: 60px 80px;
     gap: 40px;
     text-align: center;
 }
 
-.titulo{
+.contenedor2 {
+    padding: 60px 80px;
+    justify-content: space-between;
+}
+
+.col-4 {
+    justify-content: center;
+}
+
+.spacing-60 {
+    margin-bottom: 60px;
+    /* Ajusta el espacio entre las dos row */
+}
+
+.titulo {
     font-optical-sizing: auto;
     font-size: 36px;
     font-weight: 800;
     font-style: normal;
 }
-.card, .col{
+
+.card,
+.col {
     width: 340px !important;
-    
+
 }
-.card{
+
+.card {
     border-radius: 30px 30px 0px 0px !important;
 }
-.row.row-cols-1.row-cols-md-3{
+
+.row.row-cols-1.row-cols-sm-2.row-cols-md-3.g-5 {
     display: flex;
-    gap: 32px;
-    justify-content:space-around;
+    justify-content: space-between;
 }
 
-.estrellas{
+.estrellas {
     display: flex;
-    justify-content:left;
+    justify-content: left;
 }
 
-.card-text{
+.card-text {
     font-optical-sizing: auto;
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
     text-align: left;
-    
+
 }
 
 .material-symbols-outlined {
-    
+
     color: #FBA651 !important;
     font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 20
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 20
+}
+
+.boton {
+    text-decoration: none;
+    display: flex;
+    width: 240px;
+    padding: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #B07439;
+    color: white !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+.titulo, .parrafo{
+    padding-bottom: 24px;
 }
