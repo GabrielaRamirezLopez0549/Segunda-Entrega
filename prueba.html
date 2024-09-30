@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta Lateral Bootstrap 5</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo personalizado para la alerta lateral */
+        .alert-lateral {
+            position: fixed;
+            top: 20px;
+            right: -400px; /* Inicia fuera de la pantalla (lado derecho) */
+            width: 300px;
+            transition: right 0.5s ease; /* Transición suave */
+            z-index: 9999; /* Asegura que esté sobre el contenido */
+        }
+
+        .alert-lateral.show {
+            right: 20px; /* Mueve la alerta dentro de la pantalla */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Formulario con Alerta Lateral</h2>
+        <form id="miFormulario">
+            <div class="mb-3">
+                <label for="inputText" class="form-label">Ingresa tu nombre</label>
+                <input type="text" class="form-control" id="inputText" placeholder="Escribe aquí...">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+         <!-- Alerta Lateral -->
+    <div id="alerta" class="alert alert-success alert-lateral" role="alert">
+        ¡Formulario enviado exitosamente!
+    </div>
+    </div>
+
+   
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript para mostrar la alerta -->
+    <script>
+        const form = document.getElementById('miFormulario');
+        const alerta = document.getElementById('alerta');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita el envío real del formulario
+
+            // Mostrar la alerta
+            alerta.classList.add('show');
+
+            // Ocultar la alerta después de 3 segundos
+            setTimeout(() => {
+                alerta.classList.remove('show');
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
