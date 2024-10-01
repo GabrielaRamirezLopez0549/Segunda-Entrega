@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/nav.css">
   <link rel="stylesheet" href="/css/cuerpo_index.css">
+  <link rel="stylesheet" href="/css/footer.css">
   <title>Document</title>
 
   <!-- Google fonts Manrope -->
@@ -135,36 +136,134 @@
     </div>
   </div>
 
+  <!--Historia-->
+   <div class="container">
+    <div class="contenedor3">
+      <div class="row  spacing-60">
+        <div class="align-center">
+            <h2 class="titulo">Nuestra Historia</h2>
+            <p class="parrafo">Pasión por la pastelería desde 1995</p>
+          </div>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 g-5 ">
+        <div class="col-6 ">
+          <div class="card mb-3 rounded-0 bg-transparent" >
+            <div class="row g-0 ">
+              <div class="col-md-4 align-center">
+                <img src="/surces/tradicion.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Tradición familiar</h5>
+                  <p >Recetas de que pasan de generación en generación</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 ">
+          <div class="card mb-3 rounded-0 bg-transparent" >
+            <div class="row g-0 ">
+              <div class="col-md-4 align-center">
+                <img src="/surces/amor.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Amor por la tradición</h5>
+                  <p >El amor por el pan es una tradición que se hornea con mucha pasión</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Slogan-->
+  <div class="container-fluid">
+    <div class="contenedor5 ">
+      <p class="frase">"El sabor de casa, todos los días"</p>
+    </div>
+  </div>
+
   <!--Formulario de contacto-->
   <div class="container">
-    <form id="miFormulario" class="needs-validation" novalidate>
-      <div class="mb-3">
-        <label for="nombre" class="form-label" id="entradanombre">Nombre y Apellido</label>
-        <input type="text" class="form-control" id="nombre" placeholder="Coloca tu nombre completo aquí" required>
-      </div>
-      <div class="mb-3">
-        <label for="correo" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" id="correo" placeholder="Coloca tu email aquí" required>
-      </div>
-      <div class="mb-3">
-        <label for="mensaje" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="mensaje" rows="3" aria-describedby="extrahelp"
-          placeholder="Coloca tumensaje aquí" required></textarea>
-        <div id="extrahelp" class="form-text">Max 250 characters</div>
-      </div>
-        <button class="boton border-0" type="submit" id="liveAlertBtn">Enviar mensaje</button>
-    </form>
+    <div class="contenedor6">
+      <div class="row ">
+        <div class="col-md-auto d-flex flex-column justify-content-center">
+          <div class="info">
+            <h2 class="titulo">Contactanos</h2>
+            <p class="parrafo">¿Tiene alguna pregunta o comentario?</p>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="formulario">
+            <form id="miFormulario" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="nombre" class="form-label" id="entradanombre">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Coloca tu nombre completo aquí" required>
+              </div>
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo" placeholder="Coloca tu email aquí" required>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" aria-describedby="extrahelp"
+                  placeholder="Coloca tumensaje aquí" required></textarea>
+                <div id="extrahelp" class="form-text">Max 250 characters</div>
+              </div>
+              <button class="boton border-0" type="submit" id="liveAlertBtn">Enviar mensaje</button>
+            </form>
+          </div>
+          
+        </div>
+        
 
-   
+
+        <div id="successAlert" class="alert alert-success alert-lateral" role="alert">
+          ¡Formulario enviado exitosamente!
+        </div>
+
+      </div>
+    </div>
+
 
   </div>
 
-  
 
-  <div id="successAlert" class="alert alert-success alert-lateral" role="alert">
-    ¡Formulario enviado exitosamente!
+<!--footer-->
+<footer class="text-center text-lg-start">
+  <div class="piepagina">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4 text-center">
+        <p>
+          © 2024 El Horno De Abuela. Todos los derechos reservados.
+        </p>
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="col-lg-4 col-md-6 mb-4 text-center">
+        <p>
+          Términos de servicio
+        </p>
+      </div>
+
+      <!-- Columna 3 -->
+      <div class="col-lg-4 col-md-6 mb-4 text-center">
+        <p>
+          Politica de privaciprivacidad 
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
-  
+</footer>
+
+
+
 
 
   <!--Archivos script-->

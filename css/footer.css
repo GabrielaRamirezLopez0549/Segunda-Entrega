@@ -1,0 +1,5 @@
+.piepagina{
+    padding: 60px 80px;
+    justify-content: center; /* Alineación horizontal */
+    align-items: center;
+}

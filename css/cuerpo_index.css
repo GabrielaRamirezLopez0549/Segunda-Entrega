@@ -13,6 +13,31 @@
     justify-content: space-between;
 }
 
+.contenedor3{
+    display: flex;
+    padding: 60px 80px;
+    justify-content: center; /* Alineación horizontal */
+    align-items: center;
+    flex-direction: column;
+}
+
+.card.mb-3.rounded-0.bg-transparent{
+    width: 452px !important;
+}
+ 
+.col-6{
+    width: 500px !important;
+}
+
+  .align-center {
+    display: flex;
+    justify-content: center; /* Alineación horizontal */
+    align-items: center;
+    flex-direction: column;
+    padding-left: 8px !important;
+  }
+
+
 .col-4 {
     justify-content: center;
 }
@@ -92,6 +117,30 @@
     padding-bottom: 24px;
 }
 
+.contenedor5 {
+    padding: 60px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #A98F75;
+}
+
+.frase{
+    font-size: 24px;
+    margin: 0px;
+    color: white !important;
+}
+
+
+.contenedor6 {
+    display: flex;
+    max-width: 100%; /* Asegura que el contenedor use el 100% del ancho */
+    padding: 60px 80px;
+    justify-content: left;
+    align-items: center;
+}
+
 .alert {
     display: none;
 }
@@ -100,18 +149,33 @@
     position: fixed;
     bottom: 20px;
     left: 50%;
-    transform: translateX(-50%); /* Centrar horizontalmente */
+    transform: translateX(-50%);
+    /* Centrar horizontalmente */
     z-index: 1050;
     display: none;
     width: 300px;
     color: #0A3622 !important;
 }
 
-input.form-control::-webkit-input-placeholder { /* Safari & Chrome */
-    color: rgba(0, 0, 0, 0.3);
+.form-control {
+    width: 496px !important; /* Asegura que los inputs ocupen el 100% del ancho */
   }
 
-textarea.form-control::-webkit-input-placeholder { /* Safari & Chrome */
-    color: rgba(0, 0, 0, 0.3);
-  }
+.info{
+    align-items: center;
+    width: 610px !important; /* Asegura que los inputs ocupen el 100% del ancho */
+}
 
+.formulario{
+    width: 500px !important; /* Asegura que los inputs ocupen el 100% del ancho */
+}
+
+input.form-control::-webkit-input-placeholder {
+    /* Safari & Chrome */
+    color: rgba(0, 0, 0, 0.3);
+}
+
+textarea.form-control::-webkit-input-placeholder {
+    /* Safari & Chrome */
+    color: rgba(0, 0, 0, 0.3);
+}
